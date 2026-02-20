@@ -1,0 +1,120 @@
+{
+  "model": "/home/guest/tanish/runs/detect/runs/stage5_robust/weights/best.pt",
+  "data_yaml": "/home/guest/tanish/AI Soc dataset/merged_road_damage/data.yaml",
+  "test_images": "/home/guest/tanish/AI Soc dataset/merged_road_damage/test/images",
+  "num_test_images": 9471,
+  "num_classes": 5,
+  "classes": {
+    "0": "pothole",
+    "1": "longitudinal_crack",
+    "2": "transverse_crack",
+    "3": "alligator_crack",
+    "4": "other_damage"
+  },
+  "eval_conf_threshold": 0.25,
+  "eval_iou_threshold": 0.5,
+  "metrics": {
+    "map50": 0.7104,
+    "map50_95": 0.431,
+    "precision": 0.1683,
+    "recall": 0.8452,
+    "f1": 0.2807,
+    "optimal_conf": 0.27,
+    "optimal_f1": 0.6661,
+    "optimal_precision": 0.7073,
+    "optimal_recall": 0.6294
+  },
+  "speed_ms": {
+    "mean": 17.72,
+    "median": 10.52,
+    "p95": 48.65,
+    "fps": 56.4
+  },
+  "totals": {
+    "gt_boxes": 15844,
+    "tp": 13392,
+    "fp": 66168,
+    "fn": 2452
+  },
+  "size_analysis": {
+    "small": {
+      "tp": 1042,
+      "fp": 6103,
+      "fn": 351,
+      "precision": 0.1458,
+      "recall": 0.748
+    },
+    "medium": {
+      "tp": 5412,
+      "fp": 31702,
+      "fn": 1190,
+      "precision": 0.1458,
+      "recall": 0.8198
+    },
+    "large": {
+      "tp": 6938,
+      "fp": 28363,
+      "fn": 911,
+      "precision": 0.1965,
+      "recall": 0.8839
+    }
+  },
+  "per_class": [
+    {
+      "class": "pothole",
+      "gt": 1688,
+      "tp": 1350,
+      "fp": 7271,
+      "fn": 338,
+      "precision": 0.1566,
+      "recall": 0.7998,
+      "f1": 0.2619,
+      "ap50_95": 0.358
+    },
+    {
+      "class": "longitudinal_crack",
+      "gt": 5386,
+      "tp": 4403,
+      "fp": 27930,
+      "fn": 983,
+      "precision": 0.1362,
+      "recall": 0.8175,
+      "f1": 0.2335,
+      "ap50_95": 0.4082
+    },
+    {
+      "class": "transverse_crack",
+      "gt": 2392,
+      "tp": 1962,
+      "fp": 10972,
+      "fn": 430,
+      "precision": 0.1517,
+      "recall": 0.8202,
+      "f1": 0.256,
+      "ap50_95": 0.3561
+    },
+    {
+      "class": "alligator_crack",
+      "gt": 2529,
+      "tp": 2274,
+      "fp": 6468,
+      "fn": 255,
+      "precision": 0.2601,
+      "recall": 0.8992,
+      "f1": 0.4035,
+      "ap50_95": 0.5309
+    },
+    {
+      "class": "other_damage",
+      "gt": 3849,
+      "tp": 3403,
+      "fp": 13527,
+      "fn": 446,
+      "precision": 0.201,
+      "recall": 0.8841,
+      "f1": 0.3275,
+      "ap50_95": 0.5018
+    }
+  ],
+  "false_alarm_images": 1112
+}
