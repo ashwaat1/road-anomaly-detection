@@ -21,6 +21,11 @@ Members:
 
 ```
 
+## Important Links
+
+- Dataset: https://www.kaggle.com/datasets/tanishchudiwal0909/arm-ai-soc-dataset-merged
+- Quantization: https://www.kaggle.com/code/rambhattaee22b047/quantisation-onnx, https://www.kaggle.com/code/rambhatta007/rdd-trainer
+
 ## 🧠 The Final Model
 
 The root directory contains `yolo26n_rdd_int8.onnx`. This is the final production model. It has been trained on the RDD dataset using a 3-stage pipeline (Base, Augment, Robust) and statically quantized to INT8, specifically optimized for ARM Cortex-A76 SDOT hardware acceleration.
